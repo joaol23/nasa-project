@@ -9,6 +9,7 @@
     "install": "npm run install-server && npm run install-client",
     "server": "npm run watch --prefix server",
     "client": "npm start --prefix client",
+    "test": "npm test --prefix server && npm test --prefix client",
     "watch": "npm run server & npm run client", 
     "deploy": "npm run build --prefix client && npm run watch --prefix server"
   },
